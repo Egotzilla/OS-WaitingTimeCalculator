@@ -7,12 +7,11 @@ int main() {
     int n;
     printf("Enter number of processes: ");
     scanf("%d", &n);
+    printf("%d", n);
     
-    int list[n] * n;
-    fir (i = 0, i < n, i++) {
-        li
-    }
+    // int list[n] * n;
 
+    printf("Hello World");
     system("pause");
     return 0;
 }
