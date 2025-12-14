@@ -61,7 +61,6 @@ def rr(n, bt):
     return wt, awt
 #____________________________________________________
 def printChart(index, value):
-    # print("---------Grantt Chart---------")
     print(f"| {p[index]} ({value}) ", end="|")
 
 def printNumber(points):
@@ -79,7 +78,7 @@ while True:
             for i in range(n):
                 bt.append(random.randint(1, 20))
         else: 
-            bt = list(map(int, input("Enter brust times(ex. 14 6 15 1):").split()))
+            bt = list(map(int, input("Enter brust times(ex. 14 6 15 1): ").split()))
             n = len(bt)
             
         choice = int(input("""Choose Scheduling Algorithm:
@@ -89,10 +88,10 @@ while True:
 
         #______________ Testing ________________
         #___ Test dataset For FCFS ________________
-        # bt = [14, 6, 15, 1]
-        # bt = [6, 10, 25, 15, 14]
+        # bt = [14, 6, 15, 1] # answer = 15.75
+        # bt = [6, 10, 25, 15, 14] # answer = 21.8
         #___ Test dataset For BB ________________
-        # bt = [4, 8, 3, 11, 7]
+        # bt = [4, 8, 3, 11, 7] # answer = 11.6
 
         p = [None] * n # process names
         at = list(range(0, n)) # arrival times
